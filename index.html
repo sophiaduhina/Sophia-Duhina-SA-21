@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="text/javascript"></script> 
+
+    <title>art share</title>
+    <link rel="shortcut icon" href="camera.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <div class="section-zero">
+            <div class="navigation">
+                <div class="container">
+                    <div class="header_body">
+                        </div>
+                        <div class="header_burger">
+                            <span></span>
+                        </div>
+                        <nav class="header_menu">
+                        <div class="header_list">
+                            <p>
+                                <a href="" class="header_chat">Chat</a>
+                            </p>
+                            <p>
+                                <a href="#social-row" class="header_network">Network</a>
+                            </p>
+                            <p>
+                                <a href="" class="header_friends">Friends</a>
+                            </p>
+                            <p>
+                                <a href="./subscribe.html" class="header_profile">Profile</a>
+                            </p>
+                            <p>
+                                <a href="contact_us_form.html" class="header_contact">Contact us</a>
+                            </p>
+                        </div>
+                    </nav>
+                        <div class="dropdown">
+                                <button onclick="OpenCloseMenu()" class="dropbtn">
+                                    Menu
+                                </button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#network">Network</a>
+                                    <a href="#">Friends</a>
+                                    <a href="./subscribe.html">Profile</a>
+                                    <a href="contact_us_form.html">Contact us</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="mid-nav">
+
+            </div>
+
+            <div class='navigation-pages'>
+                <div class='my-works'> 
+                    <a href="my.html" class='my-works-button' target="_blank">
+                        My works
+                    </a>
+                </div>
+                <div class='friends-works'>  
+                    <a href="./friends-works.html" class='friends-works-button'>
+                        Friend's works
+                    </a>
+                </div> 
+                <div class='add'> 
+                    <a href="./add.html" class='add-button'>
+                        Add
+                    </a>
+                </div>
+            </div>
+
+        <div class="wrapper">
+            <video autoplay loop muted class="wrapper_video">
+                <source src="css\images\Clouds background video.mp4">
+            </video>
+        </div>     
+
+        <div class="section-one">
+            <div class="main_header">
+                <h1 class="welcome">Welcome!</h1>
+                <h2 class="scc">Share.<br>Cooperate.<br>Create.</h2>
+            </div>
+        </div>  
+    </header>  
+    
+    <script>
+        function OpenCloseMenu() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) 
+        {
+            if (!event.target.matches('.dropbtn')) 
+        {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) 
+            {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show'))
+            {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+    </script>    
+
+    <main>
+        <div class="articles">
+            <div class="articles-row">
+                <div class="articles-item">
+                    <div class="whats-new">
+                        <div class="title">
+                            What's new?
+                        </div>
+                        <p class="desc">
+                            The animal world is full of amazing photo opportunities.
+                            We’ve come up with 30 unique animal photography examples for you.
+                        </p>
+                        <button class="more">
+                            More
+                        </button>
+                    </div>
+                    <div class="photo">
+                        <img src="./css/images/koala.jpeg" alt="" class="koala">
+                    </div>
+                </div>
+                <div class="articles-item">
+                    <div class="whats-new">
+                        <div class="title">
+                            Tips for you
+                        </div>
+                        <p class="desc">
+                            You need to focus on quality. 
+                            Use a low ISO, capture your images in Raw and utilize editing tools. 
+                            With these, you are halfway to capturing stunning images
+                        </p>
+                        <button class="more">
+                            More
+                        </button>
+                    </div>
+                    <div class="photo">
+                        <img src="./css/images/houses.jpg" alt="" class="house">
+                    </div>
+                </div>
+            </div>
+            <div class="articles-row">
+                <div class="articles-item">
+                    <div class="whats-new">
+                        <div class="title">
+                            Photos of a week
+                        </div>
+                        <p class="desc">
+                            See the National Geographic 
+                            Your Shot photo community's weekly series archive of our editor's favorite photos from that week.
+                        </p>
+                        <button class="more">
+                            More
+                        </button>
+                    </div>
+                    <div class="photo">
+                        <img src="./css/images/fash.jpg" alt="" class="fash">
+                    </div>
+                </div>
+                <div class="articles-item">
+                    <div class="whats-new">
+                        <div class="title">
+                            Most liked
+                        </div>
+                        <p class="desc">
+                            The most liked works since the website was created.
+                        </p>
+                        <button class="more">
+                            More
+                        </button>
+                    </div>
+                    <div class="photo">
+                        <img src="./css/images/mount.jpg" alt="" class="mount">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="articles-item">
+                <div class="whats-new">
+                    <div class="title">
+                        Check this out!
+                    </div>
+                    <p class="desc">
+                        Ray Mvsic composed this piece for anyone who's trying hard 
+                        to follow their dreams. May this leave you a good energy and the 
+                        strength to go on, no matter what.
+                    </p>
+                    <button class="more">
+                        More
+                    </button>
+                </div>
+                <div class="video"> 
+                    <iframe width="310" height="150" src="https://www.youtube.com/embed/mpspElH08VM" class="video-ray"
+                        title="YouTube video player"  
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div> 
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links">
+            <div class="social-row" id="social-row">
+                <div class="social-item">
+                    <div class="social">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src='./css/layout/icons/free-icon-facebook-logo-61045.png' alt="facebook" class='facebook'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <div class="social">
+                        <div class="icon" id="#links">
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <img src='./css/layout/icons/free-icon-twitter-logo-on-black-background-60580.png' alt="twitter" class='twitter'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <div class="social">
+                        <div class="icon">
+                            <a href="https://www.instagram.com/p/CNCX3ocHz6G/?igshid=13c53qfs9kdkg" target="_blank">
+                                <img src='./css/layout/icons/free-icon-instagram-logo-61164.png' alt="instagram" class='instagram'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <div class="social">
+                        <div class="icon">
+                            <a href="https://www.pinterest.de/" target="_blank">
+                                <img src='./css/layout/icons/free-icon-pinterest-logo-60574.png' alt="pinterest" class='pinterest'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <div class="social">
+                        <div class="icon">
+                        <a href="https://web.telegram.org/" target="_blank">
+                            <img src='./css/layout/icons/telegram.png' alt="telegram" class='telegram'>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <div class="social">
+                        <div class="icon">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO" target="_blank">
+                            <img src='./css/layout/icons/free-icon-youtube-733646.png' alt="youtube" class='youtube'>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </footer>
+</body>
+</html>
